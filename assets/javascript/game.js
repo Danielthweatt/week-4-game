@@ -35,7 +35,7 @@ const startGame = function() {
     assignValues();
     $('#target').text('Target: ' + target)
     $('#score').text('Your Current Total Score: ' + score);
-    $('#winsAndLosses').text('Wins: ' + wins + '    Loses: ' + losses);
+    $('#winsAndLosses').text('Wins: ' + wins + '    Losses: ' + losses);
 };
 
 //function calls

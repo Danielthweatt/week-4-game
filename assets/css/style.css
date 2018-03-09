@@ -1,0 +1,23 @@
+/* Global Styles */
+
+body {
+    /* Background pattern from Subtle Patterns */
+    background-image: url("../images/congruent_pentagon.png");
+    font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
