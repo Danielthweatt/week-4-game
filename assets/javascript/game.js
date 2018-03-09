@@ -13,11 +13,11 @@ let losses = 0;
 //function definitions
 const assignValues = function() {
     score = 0;
-    target = ;
-    firstCrystalValue = ;
-    secondCrystalValue = ;
-    thirdCrystalValue = ;
-    fourthCrystalValue = ;
+    target = Math.floor(Math.random() * 101) + 19;
+    firstCrystalValue = Math.floor(Math.random() * 11) + 1;
+    secondCrystalValue = Math.floor(Math.random() * 11) + 1;
+    thirdCrystalValue = Math.floor(Math.random() * 11) + 1;
+    fourthCrystalValue = Math.floor(Math.random() * 11) + 1;
 };
 
 const compareScoreAndTarget = function () {
