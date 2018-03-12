@@ -1,6 +1,7 @@
 'use strict';
 
 // variables
+
 let target;
 let score;
 let firstCrystalValue;
@@ -11,6 +12,7 @@ let wins = 0;
 let losses = 0;
 
 //function definitions
+
 const assignValues = function() {
     score = 0;
     target = Math.floor(Math.random() * 101) + 19;
@@ -18,6 +20,13 @@ const assignValues = function() {
     secondCrystalValue = Math.floor(Math.random() * 11) + 1;
     thirdCrystalValue = Math.floor(Math.random() * 11) + 1;
     fourthCrystalValue = Math.floor(Math.random() * 11) + 1;
+};
+
+const startGame = function() {
+    assignValues();
+    $('#target').text('Target: ' + target)
+    $('#score').text('Your Current Total Score: ' + score);
+    $('#winsAndLosses').text('Wins: ' + wins + '    Losses: ' + losses);
 };
 
 const compareScoreAndTarget = function () {
@@ -29,13 +38,6 @@ const compareScoreAndTarget = function () {
         losses = losses + 1;
         startGame();
     } 
-};
-
-const startGame = function() {
-    assignValues();
-    $('#target').text('Target: ' + target)
-    $('#score').text('Your Current Total Score: ' + score);
-    $('#winsAndLosses').text('Wins: ' + wins + '    Losses: ' + losses);
 };
 
 //function calls
